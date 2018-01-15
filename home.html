@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+	<title>To Do!</title>
+  </head>
+  <body style="background-color: #545454">
+  	<nav class="navbar bg-dark font-italic" style="border: 2px solid #2A2A2A">
+  		<a href="#" class="nav-brand  text-danger  h1 ">To Do... </a>
+  		<form class="form-inline">
+  			<input id="text-search" class="form-control mr-2" type="search" placeholder="Пошук задачі" aria-label="Search" onchange="seacrh()">
+			<!--<button class="btn" type="submit" onclick="searchHighlight(val())">Пошук</button>-->
+  		</form>	
+  	</nav>
+  	<div id="myDIV" class="container-fluid bg-dark" style="border: 2px solid #2A2A2A">
+		<h1 class="text-center text-danger font-weight-bold mt-4 ">Додати задачу</h1><br>
+		<div class="form-inline justify-content-md-center p-2">
+			<input id="add-input" type="text" class="form-control w-50" placeholder="Назва задачі" aria-label="Task">
+			<button id="add-button" class="btn ml-2" type="submit" onclick="createTodoItem();">Додати</button>
+		</div>
+	</div>
+
+    <ul id="todo-list" class="list-group p-2 font-italic" ></ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/highlight.js"></script>
+	<script src="js/script.js"></script>
+  </body>
+</html>

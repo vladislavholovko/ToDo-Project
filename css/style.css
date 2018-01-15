@@ -1,0 +1,16 @@
+
+.todo-item.editing .title {
+    display: none;
+}
+
+.todo-item .textfield {
+    display: none;
+}
+
+.todo-item.editing .textfield {
+    display: inline-block;
+}
+
+.highlight{
+    background: yellow;
+}
